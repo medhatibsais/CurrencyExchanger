@@ -34,10 +34,7 @@ class CurrencyExchangerUITests: XCTestCase {
         amountTextField.tap()
         amountTextField.typeText("23")
         
-        app.collectionViews.containing(.other, identifier:"Vertical scroll bar, 13 pages").element.swipeUp()
-        app.collectionViews.children(matching: .cell).element(boundBy: 8).children(matching: .other).element.children(matching: .other).element.tap()
-        
-        app.buttons["JOD"].tap()
+        app.buttons["CurrencyButton"].tap()
         
         let textField = app.searchFields["Search for currency"]
         textField.tap()
