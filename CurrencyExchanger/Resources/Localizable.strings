@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  CurrencyExchanger
+
+  Created by Medhat Ibsais on 10/09/2022.
+  
+*/
+
+// MARK: - Currency Converter View Controller
+"currencyConverterViewController.amountTextField.placeholder"       = "Enter amount here";
+"currencyConverterViewController.forceReloadButton.title"           = "Force Reload";
+"currencyConverterViewController.amountLabel.placeholder"           = "Result will appear here";
+
+// MARK: - Currency Picker View Controller
+"currencyPickerViewController.searchBar.placeholder"                = "Search for currency";
+
+// MARK: - Alert view
+"alertView.title"                                                   = "Error";
+"alertView.actions.ok.title"                                        = "OK";

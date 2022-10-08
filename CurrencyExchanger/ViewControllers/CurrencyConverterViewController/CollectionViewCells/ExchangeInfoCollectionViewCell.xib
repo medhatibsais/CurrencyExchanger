@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExchangeInfoCollectionViewCell" id="gTV-IL-0wX" customClass="ExchangeInfoCollectionViewCell" customModule="CurrencyExchanger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-sl-4zw">
+                        <rect key="frame" x="0.0" y="0.0" width="252" height="175"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnV-EI-XaZ">
+                                <rect key="frame" x="10" y="10" width="232" height="155"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GnV-EI-XaZ" firstAttribute="top" secondItem="RbV-sl-4zw" secondAttribute="top" constant="10" id="44J-dK-0Rd"/>
+                            <constraint firstAttribute="bottom" secondItem="GnV-EI-XaZ" secondAttribute="bottom" constant="10" id="4M2-hf-CdI"/>
+                            <constraint firstItem="GnV-EI-XaZ" firstAttribute="leading" secondItem="RbV-sl-4zw" secondAttribute="leading" constant="10" id="Dza-Ct-nSR"/>
+                            <constraint firstAttribute="trailing" secondItem="GnV-EI-XaZ" secondAttribute="trailing" constant="10" id="bRc-GN-DyB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RbV-sl-4zw" secondAttribute="trailing" id="9dU-BG-CVc"/>
+                <constraint firstAttribute="bottom" secondItem="RbV-sl-4zw" secondAttribute="bottom" id="cjg-mP-GU7"/>
+                <constraint firstItem="RbV-sl-4zw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rd0-TP-mUx"/>
+                <constraint firstItem="RbV-sl-4zw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wVn-6e-ZJt"/>
+            </constraints>
+            <size key="customSize" width="252" height="175"/>
+            <connections>
+                <outlet property="containerView" destination="RbV-sl-4zw" id="aVx-iW-wf6"/>
+                <outlet property="infoLabel" destination="GnV-EI-XaZ" id="dql-Ae-38P"/>
+            </connections>
+            <point key="canvasLocation" x="284.05797101449275" y="125.55803571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>
