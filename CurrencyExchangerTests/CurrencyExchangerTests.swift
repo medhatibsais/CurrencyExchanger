@@ -29,19 +29,19 @@ class CurrencyExchangerTests: XCTestCase {
         }
     }
 
-    func test2USDToAED() {
-        
-        var exchangeResult: Double = 0.0
-        let convertedTo = "AED"
-        let amount: Double = 2.0
-        
-        if let currency = CurrencyCachingManager.shared.getCurrency(for: SystemUtils.baseCurrency), let forigenCurrencyRate = currency.rates.first(where: { $0.code == convertedTo })?.amount {
-        
-            exchangeResult = amount * forigenCurrencyRate
-        }
-        
-        XCTAssertEqual(CurrencyConverter.exchange(amount: amount, to: convertedTo), exchangeResult)
-    }
+//    func test2USDToAED() {
+//
+//        var exchangeResult: Double = 0.0
+//        let convertedTo = "AED"
+//        let amount: Double = 2.0
+//
+//        if let currency = CurrencyCachingManager.shared.getCurrency(for: SystemUtils.baseCurrency), let forigenCurrencyRate = currency.rates.first(where: { $0.code == convertedTo })?.amount {
+//
+//            exchangeResult = amount * forigenCurrencyRate
+//        }
+//
+//        XCTAssertEqual(CurrencyConverter.exchange(amount: amount, to: convertedTo), exchangeResult)
+//    }
     
     func test44USDToAED() {
         
