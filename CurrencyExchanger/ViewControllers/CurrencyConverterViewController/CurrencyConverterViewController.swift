@@ -36,7 +36,13 @@ class CurrencyConverterViewController: BaseViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        if ProcessInfo.processInfo.environment["IS_TESTING"] == "1" {
+            print("We're in test mode")
+        } else {
+            print("We're not in test mode")
+        }
+        
         // Init view model
         self.viewModel = CurrencyConverterViewModel()
         
