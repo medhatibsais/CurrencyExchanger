@@ -44,6 +44,14 @@
 		1460134128CCBA80000AB550 /* CurrencyPickerViewController+SearchBarDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460134028CCBA80000AB550 /* CurrencyPickerViewController+SearchBarDelegates.swift */; };
 		1460134528CD2B02000AB550 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1460134428CD2B02000AB550 /* Localizable.strings */; };
 		1460134828CD863A000AB550 /* CurrencyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1460134728CD863A000AB550 /* CurrencyError.swift */; };
+		14AFC22C290066E1002892BF /* DataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC22B290066E1002892BF /* DataTaskMock.swift */; };
+		14AFC22E29006741002892BF /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC22D29006741002892BF /* URLSessionMock.swift */; };
+		14AFC23029006754002892BF /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC22F29006754002892BF /* URLProtocolMock.swift */; };
+		14AFC23229006773002892BF /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC23129006773002892BF /* URLSessionProtocol.swift */; };
+		14AFC2352900679D002892BF /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC2342900679D002892BF /* FileUtil.swift */; };
+		14AFC23829006FB6002892BF /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 14AFC23729006FB5002892BF /* currencies.json */; };
+		14AFC23B29008B14002892BF /* MockedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC23A29008B13002892BF /* MockedCurrency.swift */; };
+		14AFC23E29008C72002892BF /* MockedCurrencyExchangerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AFC23D29008C72002892BF /* MockedCurrencyExchangerModel.swift */; };
 		198AC5810D0B6F430FA39E6F /* Pods_CurrencyExchanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72425DA43D3A82D43BEFDACC /* Pods_CurrencyExchanger.framework */; };
 		43C63F9203EDB5C37C5EC289 /* Pods_CurrencyExchangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9FF1888FF8EBE359C2B69E /* Pods_CurrencyExchangerTests.framework */; };
 		F1A9159C660B3671C86D3F7D /* Pods_CurrencyExchanger_CurrencyExchangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0F318DE1832AB00C7655CA /* Pods_CurrencyExchanger_CurrencyExchangerUITests.framework */; };
@@ -109,6 +117,14 @@
 		1460134028CCBA80000AB550 /* CurrencyPickerViewController+SearchBarDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyPickerViewController+SearchBarDelegates.swift"; sourceTree = "<group>"; };
 		1460134428CD2B02000AB550 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		1460134728CD863A000AB550 /* CurrencyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyError.swift; sourceTree = "<group>"; };
+		14AFC22B290066E1002892BF /* DataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskMock.swift; sourceTree = "<group>"; };
+		14AFC22D29006741002892BF /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		14AFC22F29006754002892BF /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		14AFC23129006773002892BF /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		14AFC2342900679D002892BF /* FileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		14AFC23729006FB5002892BF /* currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currencies.json; sourceTree = "<group>"; };
+		14AFC23A29008B13002892BF /* MockedCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCurrency.swift; sourceTree = "<group>"; };
+		14AFC23D29008C72002892BF /* MockedCurrencyExchangerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCurrencyExchangerModel.swift; sourceTree = "<group>"; };
 		26363C7825273F8EFAF2C407 /* Pods-CurrencyExchangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyExchangerTests.release.xcconfig"; path = "Target Support Files/Pods-CurrencyExchangerTests/Pods-CurrencyExchangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		2DE2E34C669EAE24819D5106 /* Pods-CurrencyExchanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyExchanger.release.xcconfig"; path = "Target Support Files/Pods-CurrencyExchanger/Pods-CurrencyExchanger.release.xcconfig"; sourceTree = "<group>"; };
 		55B9E8C15ED320496652340D /* Pods-CurrencyExchangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyExchangerTests.debug.xcconfig"; path = "Target Support Files/Pods-CurrencyExchangerTests/Pods-CurrencyExchangerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +204,11 @@
 			isa = PBXGroup;
 			children = (
 				146012D728CB858F000AB550 /* CurrencyExchangerTests.swift */,
+				14AFC23C29008B4B002892BF /* MockedModels */,
+				14AFC23929008B02002892BF /* MockedEntities */,
+				14AFC23629006A61002892BF /* JSONFiles */,
+				14AFC23329006795002892BF /* Utils */,
+				14AFC22A290066C1002892BF /* NetworkMocks */,
 			);
 			path = CurrencyExchangerTests;
 			sourceTree = "<group>";
@@ -428,6 +449,49 @@
 			path = CurrencyError;
 			sourceTree = "<group>";
 		};
+		14AFC22A290066C1002892BF /* NetworkMocks */ = {
+			isa = PBXGroup;
+			children = (
+				14AFC22B290066E1002892BF /* DataTaskMock.swift */,
+				14AFC22D29006741002892BF /* URLSessionMock.swift */,
+				14AFC22F29006754002892BF /* URLProtocolMock.swift */,
+				14AFC23129006773002892BF /* URLSessionProtocol.swift */,
+			);
+			path = NetworkMocks;
+			sourceTree = "<group>";
+		};
+		14AFC23329006795002892BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14AFC2342900679D002892BF /* FileUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		14AFC23629006A61002892BF /* JSONFiles */ = {
+			isa = PBXGroup;
+			children = (
+				14AFC23729006FB5002892BF /* currencies.json */,
+			);
+			path = JSONFiles;
+			sourceTree = "<group>";
+		};
+		14AFC23929008B02002892BF /* MockedEntities */ = {
+			isa = PBXGroup;
+			children = (
+				14AFC23A29008B13002892BF /* MockedCurrency.swift */,
+			);
+			path = MockedEntities;
+			sourceTree = "<group>";
+		};
+		14AFC23C29008B4B002892BF /* MockedModels */ = {
+			isa = PBXGroup;
+			children = (
+				14AFC23D29008C72002892BF /* MockedCurrencyExchangerModel.swift */,
+			);
+			path = MockedModels;
+			sourceTree = "<group>";
+		};
 		8F2D7D80288F912E4C9CDCC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +637,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AFC23829006FB6002892BF /* currencies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,7 +793,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AFC23229006773002892BF /* URLSessionProtocol.swift in Sources */,
+				14AFC22E29006741002892BF /* URLSessionMock.swift in Sources */,
+				14AFC23B29008B14002892BF /* MockedCurrency.swift in Sources */,
+				14AFC22C290066E1002892BF /* DataTaskMock.swift in Sources */,
+				14AFC2352900679D002892BF /* FileUtil.swift in Sources */,
+				14AFC23E29008C72002892BF /* MockedCurrencyExchangerModel.swift in Sources */,
 				146012D828CB858F000AB550 /* CurrencyExchangerTests.swift in Sources */,
+				14AFC23029006754002892BF /* URLProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

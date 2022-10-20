@@ -136,7 +136,7 @@ class CurrencyConverterViewController: BaseViewController {
     private func setupCurrencyButton() {
         
         // Get the default currency
-        if let firstCurrency = CurrencyCachingManager.shared.getCurrencies().first(where: { $0.code == SystemUtils.defaultCurrencyCode }) {
+        if let firstCurrency = CurrencyCachingManager.shared.getCurrencies().first {
             
             // Set selected currency
             self.selectedCurrency = firstCurrency
@@ -146,7 +146,6 @@ class CurrencyConverterViewController: BaseViewController {
             
             // Set target
             self.currencySelectionButton.addTarget(self, action: #selector(self.openCurrencyPicker), for: .touchUpInside)
-            
         }
         else {
             

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Currency Rate
-struct CurrencyRate: Codable {
+struct CurrencyRate: Codable, Equatable {
     
     /// Code
     var code: String

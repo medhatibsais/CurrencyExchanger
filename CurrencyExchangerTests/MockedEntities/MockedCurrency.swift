@@ -1,23 +1,20 @@
 //
-//  Currency.swift
-//  CurrencyExchanger
+//  MockedCurrency.swift
+//  CurrencyExchangerTests
 //
-//  Created by Medhat Ibsais on 09/09/2022.
+//  Created by Medhat Ibsais on 19/10/2022.
 //
 
 import Foundation
 
 /// Currency
-struct Currency: Codable, Equatable {
+struct MockedCurrency: Codable {
     
     /// Code
     var code: String
     
     /// Name
     var name: String
-    
-    /// Rates
-    var rates: [CurrencyRate]
     
     /**
      Initializer
@@ -27,7 +24,6 @@ struct Currency: Codable, Equatable {
         // Default values
         self.code = ""
         self.name = ""
-        self.rates = []
     }
     
     /**
@@ -42,5 +38,19 @@ struct Currency: Codable, Equatable {
         
         // Set name
         self.name = representation.name
+    }
+    
+    func fetch(url: URL, using session: URLSessionProtocol = URLSession.shared, completionHandler: @escaping () -> Void) {
+        let task = session.dataTask(with: url) { data, response, error in
+            if let data = data {
+
+                
+                
+            }
+            
+            completionHandler()
+        }
+        
+        task.resume()
     }
 }

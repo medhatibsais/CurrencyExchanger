@@ -28,6 +28,37 @@ class CurrencyExchangerTests: XCTestCase {
             }
         }
     }
+    
+    func testAPIResponse() {
+        
+        let url = URL(string: "https://openexchangerates.org/api/currencies.json")!
+        
+        let jsonData = FileUtil.data(for: "currencies.json")!
+        let preFetchedCurrencies = self.parseCurrencies(data: jsonData)
+        
+        let expectation = XCTestExpectation(description: "Downloading currencies triggers resume().")
+        URLProtocolMock.testURLs = [url: jsonData]
+        
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [URLProtocolMock.self]
+        let session = URLSession(configuration: config)
+        
+        MockedCurrencyExchangerModel.fetch(url: url, using: session) { result in
+            
+            switch result {
+            case .success(let currencies):
+                
+                XCTAssertTrue(currencies.sorted(by: { $0.code < $1.code }) == preFetchedCurrencies.sorted(by: { $0.code < $1.code }))
+                
+            case .failure:
+                break
+            }
+            
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 5)
+    }
 
     func test2USDToAED() {
         
@@ -112,7 +143,25 @@ class CurrencyExchangerTests: XCTestCase {
         wait(for: [expectation], timeout: 10)
     }
     
-    func testRouter() {
+    private func parseCurrencies(data: Data) -> [Currency] {
         
+        // Currencies
+        var currencies: [Currency] = []
+        
+        // json object
+        let jsonObject = SystemUtils.responseJSONSerializer(data: data)
+        
+        // Serialize object
+        if let jsonObject = jsonObject as? [String: String] {
+            
+            // Iterate over each json object
+            for (key, value) in jsonObject {
+                
+                // Append to currencies list
+                currencies.append(Currency(representation: (code: key, name: value)))
+            }
+        }
+        
+        return currencies
     }
 }

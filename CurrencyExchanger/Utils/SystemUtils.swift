@@ -16,9 +16,6 @@ class SystemUtils {
     /// Base currency
     static let baseCurrency: String = "USD"
     
-    /// Default currency code
-    static let defaultCurrencyCode: String = "JOD"
-    
     /// Network reachability manager
     private static let networkReachabilityManager: NetworkReachabilityManager = NetworkReachabilityManager()!
     
