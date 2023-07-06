@@ -78,6 +78,7 @@ class CurrencyPickerViewController: BaseViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.backgroundColor = .clear
+        self.tableView.accessibilityIdentifier = "CurrencyTableView"
         
         // Register cell
         CurrencyPickerTableViewCell.register(in: self.tableView)
@@ -95,6 +96,7 @@ class CurrencyPickerViewController: BaseViewController {
         self.searchBar.searchTextField.textColor = .black
         self.searchBar.searchTextField.becomeFirstResponder()
         self.searchBar.placeholder = NSLocalizedString("currencyPickerViewController.searchBar.placeholder", comment: "")
+        self.searchBar.searchTextField.accessibilityIdentifier = "CurrencySearchBar"
     }
     
     // MARK: - Keyboard Notifications
