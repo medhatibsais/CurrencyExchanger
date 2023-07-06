@@ -163,9 +163,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		145BBDC82A56757700D3113E /* test-results */ = {
+			isa = PBXGroup;
+			children = (
+				145BBDCB2A56759D00D3113E /* rspec */,
+				145BBDCA2A56759400D3113E /* mocha */,
+				145BBDC92A56758100D3113E /* jest */,
+			);
+			path = "test-results";
+			sourceTree = "<group>";
+		};
+		145BBDC92A56758100D3113E /* jest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = jest;
+			sourceTree = "<group>";
+		};
+		145BBDCA2A56759400D3113E /* mocha */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mocha;
+			sourceTree = "<group>";
+		};
+		145BBDCB2A56759D00D3113E /* rspec */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rspec;
+			sourceTree = "<group>";
+		};
 		146012B428CB858C000AB550 = {
 			isa = PBXGroup;
 			children = (
+				145BBDC82A56757700D3113E /* test-results */,
 				146012BF28CB858C000AB550 /* CurrencyExchanger */,
 				146012D628CB858F000AB550 /* CurrencyExchangerTests */,
 				146012E028CB858F000AB550 /* CurrencyExchangerUITests */,
