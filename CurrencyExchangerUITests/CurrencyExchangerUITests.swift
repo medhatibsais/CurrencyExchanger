@@ -47,7 +47,7 @@ class CurrencyExchangerUITests: XCTestCase {
         textField.tap()
         textField.typeText("aed")
         
-        self.app.tables["CurrencyTableView"].cells.staticTexts["United Arab Emirates Dirham\nAED"].tap()
+        self.app.tables["CurrencyTableView"].cells["AED"].tap()
         
         self.app.buttons["ForceReload"].tap()
         

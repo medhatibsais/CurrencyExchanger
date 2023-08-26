@@ -36,6 +36,9 @@ extension CurrencyPickerViewController: UITableViewDataSource {
             // Setup cell
             cell.setup(with: representable)
             
+            // Set accessibility identifier
+            cell.accessibilityIdentifier = representable.selectorType
+            
             return cell
         }
         

@@ -22,6 +22,9 @@ class CurrencyPickerTableViewCellRepresentable: TableViewCellRepresentable {
     /// Item data index
     var itemDataIndex: Int
     
+    /// Selector type
+    var selectorType: String
+    
     /// Details attributed string
     var detailsAttributedString: NSAttributedString
     
@@ -35,6 +38,7 @@ class CurrencyPickerTableViewCellRepresentable: TableViewCellRepresentable {
         self.cellReuseIdentifier = CurrencyPickerTableViewCell.getReuseIdentifier()
         self.isSelected = false
         self.itemDataIndex = -1
+        self.selectorType = ""
         self.detailsAttributedString = NSAttributedString()
     }
     

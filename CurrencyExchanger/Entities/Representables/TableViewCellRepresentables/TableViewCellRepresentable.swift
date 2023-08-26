@@ -21,4 +21,7 @@ protocol TableViewCellRepresentable {
     
     /// Item data index
     var itemDataIndex: Int { get set }
+    
+    /// Selector type
+    var selectorType: String { get set }
 }

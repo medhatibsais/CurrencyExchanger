@@ -59,6 +59,9 @@ class CurrencyPickerViewModel {
             // Set item data index, this is for knowing the real index for this cell data inside the main list that contains the currency details
             currencyCellRepresentable.itemDataIndex = index
             
+            // Set selector type, for unit testing purposes, to indicate a unique ID for the cell
+            currencyCellRepresentable.selectorType = currency.code
+            
             // Append to representables list
             self.representables.append(currencyCellRepresentable)
         }
